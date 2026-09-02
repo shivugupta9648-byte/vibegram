@@ -104,6 +104,8 @@ class _AuthScreenState extends State<AuthScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text('VibeGram', style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold, fontFamily: 'Cursive')),
+            const SizedBox(height: 5),
+            const Text('sriyu', style: TextStyle(fontSize: 16, color: Colors.grey, letterSpacing: 2)),
             const SizedBox(height: 30),
             if (!isLogin) ...[
               TextField(
@@ -149,7 +151,7 @@ class MainScreen extends StatelessWidget {
     final user = FirebaseAuth.instance.currentUser;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('VibeGram'),
+        title: const Text('VibeGram - sriyu'),
         actions: [
           IconButton(
             icon: const Icon(Icons.logout),
