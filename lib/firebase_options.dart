@@ -1,6 +1,6 @@
-// File: lib/firebase_options.dart
-import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/foundation.dart' show kIsWeb, defaultTargetPlatform, TargetPlatform;
+import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
+import 'package:flutter/foundation.dart'
+    show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
@@ -19,18 +19,17 @@ class DefaultFirebaseOptions {
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+          'you can reconfigure this by running the Firebase CLI again.',
         );
       default:
         throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for this platform - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
+          'DefaultFirebaseOptions are not supported for this platform.',
         );
     }
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBgKFIyXTIumq-edRfxqm0b36_bWR3oRokM',
+    apiKey: 'AIzaSyBgKFiYXTiumq-edRfXqm0b36_bWR3oRokM',
     appId: '1:53995384110:web:vibegramf1c94',
     messagingSenderId: '53995384110',
     projectId: 'vibegram-f1c94',
@@ -39,7 +38,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBgKFIyXTIumq-edRfxqm0b36_bWR3oRokM',
+    apiKey: 'AIzaSyBgKFiYXTiumq-edRfXqm0b36_bWR3oRokM',
     appId: '1:53995384110:android:vibegramf1c94',
     messagingSenderId: '53995384110',
     projectId: 'vibegram-f1c94',
@@ -47,13 +46,13 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBgKFIyXTIumq-edRfxqm0b36_bWR3oRokM',
+    apiKey: 'AIzaSyBgKFiYXTiumq-edRfXqm0b36_bWR3oRokM',
     appId: '1:53995384110:ios:vibegramf1c94',
     messagingSenderId: '53995384110',
     projectId: 'vibegram-f1c94',
     storageBucket: 'vibegram-f1c94.appspot.com',
   );
-  
+
   static const FirebaseOptions macos = ios;
   static const FirebaseOptions windows = web;
 }
