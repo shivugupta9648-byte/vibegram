@@ -30,11 +30,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyBgKFiYXTiumq-edRfXqm0b36_bWR3oRokM',
-    appId: '1:53995384110:web:vibegramf1c94',
-    messagingSenderId: '53995384110',
+    appId: '1:905389659878:web:e55efe4d26d590cb110d27',
+    messagingSenderId: '905389659878',
     projectId: 'vibegram-f1c94',
     authDomain: 'vibegram-f1c94.firebaseapp.com',
-    storageBucket: 'vibegram-f1c94.appspot.com',
+    storageBucket: 'vibegram-f1c94.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
