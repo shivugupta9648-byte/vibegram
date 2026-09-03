@@ -30,19 +30,19 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBgKFiYXTiumq-edRfXqm0b36_bWR3oRokM',
-    appId: '1:53995384110:android:vibegramf1c94',
-    messagingSenderId: '53995384110',
-    projectId: 'vibegram-f1c94',
-    storageBucket: 'vibegram-f1c94.appspot.com',
+    apiKey: "AIzaSyBgKFiyXTiumq-edRfxqm0b36_bWR3oRokM",
+    appId: "1:905389659878:web:e55efe4d26d590cb110d27",
+    messagingSenderId: "905389659878",
+    projectId: "vibegram-f1c94",
+    storageBucket: "vibegram-f1c94.firebasestorage.app",
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBgKFiYXTiumq-edRfXqm0b36_bWR3oRokM',
+    apiKey: 'AIzaSyBgKFiyXTiumq-edRfxqm0b36_bWR3oRokM',
     appId: '1:53995384110:ios:vibegramf1c94',
-    messagingSenderId: '53995384110',
+    messagingSenderId: "905389659878",
     projectId: 'vibegram-f1c94',
-    storageBucket: 'vibegram-f1c94.appspot.com',
+    storageBucket: "vibegram-f1c94.firebasestorage.app",
   );
 
   static const FirebaseOptions macos = ios;
